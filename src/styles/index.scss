@@ -1,5 +1,5 @@
-@import '../styles/header';
 @import '../styles/card/variables';
+@import '../styles/header';
 @import '../styles/card/card';
 @import '../styles/card/mixin';
 @import '../styles/card/stars';
@@ -14,14 +14,12 @@ body {
 }
 
 main {
-  margin: 20px;
-
   display: grid;
   gap: 46px 48px;
 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
-  padding: 40px;
+  padding: 40px 50px;
 }
 
 @media (min-width: 488px) {

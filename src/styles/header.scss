@@ -43,11 +43,12 @@
   display: flex;
   align-items: center;
   height: var(--nav-height);
-  font-size: 12px;
+  font-size: $size-medium;
   text-transform: uppercase;
-  color: #060b35;
+  color: $color-text;
   text-decoration: none;
   overflow: hidden;
+  transition: color 300ms;
 }
 
 /* Base underline (hidden) */

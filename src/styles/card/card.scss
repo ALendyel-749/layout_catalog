@@ -1,16 +1,15 @@
 .card {
-  max-width: $card-width;
-  width: 100%;
+  width: 200px;
   padding: 32px 16px 16px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $color-border;
 
   position: relative;
   transition:
-    transform 220ms ease,
-    box-shadow 220ms ease;
+    transform 300ms ease,
+    box-shadow 300ms ease;
   transform-origin: center center;
 
   &:hover {
@@ -32,6 +31,10 @@
     font-size: 12px;
     line-height: 18px;
     color: $color-text;
+
+    &:hover {
+      color: $color-card-title-hover;
+    }
   }
 
   &__code {
@@ -88,6 +91,10 @@
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
+    transition:
+      background-color 300ms,
+      color 300ms,
+      border-color 300ms;
 
     &:hover,
     &:focus-visible {
