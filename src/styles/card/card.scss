@@ -12,12 +12,6 @@
     box-shadow 300ms ease;
   transform-origin: center center;
 
-  &:hover {
-    transform: scale(1.2); // +20%
-    z-index: 10; // піднімаємо над сусідніми
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  }
-
   &__image {
     width: 160px;
     height: 134px;
@@ -31,10 +25,6 @@
     font-size: 12px;
     line-height: 18px;
     color: $color-text;
-
-    &:hover {
-      color: $color-card-title-hover;
-    }
   }
 
   &__code {
@@ -103,4 +93,11 @@
       border-color: $color-primary;
     }
   }
+}
+
+.card:hover .card__title {
+  transform: scale(1.2); // +20%
+  z-index: 10; // піднімаємо над сусідніми
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  color: $color-card-title-hover;
 }
